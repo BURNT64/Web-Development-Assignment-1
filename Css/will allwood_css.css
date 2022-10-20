@@ -1,0 +1,331 @@
+/*This element creates the appropriate padding and border in accordance with width and height in order to center text, this is used on the image showcase page for the text*/
+* {
+  box-sizing: border-box;
+}
+
+/*this centers the text on the Image showcase page */
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+/*this changes the font on each page to arial*/
+body {
+  font-family: "Arial";
+}
+
+
+/*this changes the nav bar text to arial font*/
+.nav{
+  font: 1em arial;
+}
+
+/*This sets the style for text that uses the article class, the article class is used on every page except for the Image Showcase page*/
+.article {
+  overflow: hidden;
+  text-align: left;
+  font: 'arial';
+  font-size: large;
+  padding: 14px 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/*This sets the style for the footer section of the website*/
+footer {
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/*sets the colour for the navigation bar and also hides and excess overflow near the navigation bar*/
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+/*Sets the style for the navigation bar*/
+.topnav a {
+  float: left; 
+  display: block; 
+  text-align: center;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font: 1em arial;
+}
+
+/*Changes the colour of the icons at the bottom of the page when the cursor hovers over*/
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/*When the user is on a page the page that they are on is highlighted in red on the navigation bar*/
+.topnav a.active {
+  background-color: #cf0000;
+  color: rgb(255, 255, 255);
+}
+
+/*Sets the style and positions for the button on the index page that says "ENTER HERE"*/
+.button {
+  background-color: #ff0000;
+  border: solid rgb(255, 255, 255);
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1.1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Arial Bold', sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+/*changes the colour of the index page button that says "ENTER HERE" to white once the user hovers over it (the text also changes from white to black to match the colour change*/
+
+.button1:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/*This is the css that styles the main banner used on each of the main pages. the image will not move if the website is zoomed in or out and it stretches to each side of the screen*/
+
+.image-cover {
+    background-image: url("../Img/branding_original.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 25vh;
+    width: 100%;
+}
+
+/*This is the css that fills the index page with the main branding image, like the banner it doesn't shift if the user zooms in or out of the page*/
+
+  .image-big_cover {
+    background-image: url("../Img/branding_original.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+
+  /*this is the css for the images on about and biography*/
+.img{
+  width: 500px;
+  float: left;
+  padding-right: 12px;
+}
+
+/*this is the css for the images on Content Description*/
+.img-two{
+  width: 600px;
+  height: 300px;
+  float: left;
+  padding-right: 12px;
+}
+
+/*Singh, A., 2022. FAQ section design - CSS. [online] codepen.io. Available at: <https://codepen.io/codeseries09/pen/poowRqK> [Accessed 26 January 2022].*/
+/*this puts the qna questions into a box and styles it to fit the colour scheme of the page*/
+.box{
+  width: 740px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0px 0px 20px #00000091;
+ }
+ 
+ .box .heading{
+  background: #000000;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Arial";
+  font-size: larger;
+ }
+ /*Singh, A., 2022. FAQ section design - CSS. [online] codepen.io. Available at: <https://codepen.io/codeseries09/pen/poowRqK> [Accessed 26 January 2022].*/
+
+
+ /*this sets the padding for the FAQ BOX*/
+.Box_Padding{
+  padding: 0px 20px 20px;
+ }
+
+ /*This sets the style for the text within the FAQ Bo*/
+ details{
+  background: #f6f6f6;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-family: "Arial";
+  font-size: Large;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/*Splits the images on the image showcase page into 4 colums that have a small amount of space between them*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/*Create four equal columns that sits next to each other and that fit the page*/
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+/*keeps all images in the center of the page and spaced apart evenly*/
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*codepen.io. 2020. CodePen Home Full Functional HTML Form #30days30submits #day-19. [online] Available at: <https://codepen.io/Web_Cifar/pen/gOrrPpO> [Accessed 4 February 2022].*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*this creates a container for the contact me section of the page*/
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000091;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/*this creates space between the text boxes in the contact me section of the page*/
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/*this helps to organise the text boxes to fit the container and the text is above the respected container in the contact me section */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+/*provides a vertical drop down box that shows commonly enter words (aka an email used frequently)*/
+textarea {
+  resize: vertical;
+}
+
+/*creates the style for the button used on the questions and answers page*/
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  background-color: #ff0000;
+  border: solid rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+
+/*adds a hover effect to the submit button the questions and answers page*/ 
+button[type="submit"]:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/*creates the style for the status bar which appears when the user presses the submit button*/
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/*if the user emters the correct details the status bar is yelllow on apperance */
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+
+/*if the user enters the wrong details the status bar is red on apperance */
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+/*the assists the css animation sequence when pressing the submit button*/
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/*codepen.io. 2020. CodePen Home Full Functional HTML Form #30days30submits #day-19. [online] Available at: <https://codepen.io/Web_Cifar/pen/gOrrPpO> [Accessed 4 February 2022].*/
